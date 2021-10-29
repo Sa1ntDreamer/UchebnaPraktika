@@ -1,7 +1,23 @@
 :root {
     --clr-neon: hsl(317 100% 54%);
     --clr-bg: hsl(323 21% 16%);
+    --clr-div: hsl(323 65% 16%);
+}
+
+#layout {
+    font-size: 1.5rem;
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--clr-neon);
+    border: var(--clr-neon) 0.125em solid;
+    padding: 1em 1em;
+    border-radius: 0.25em;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+    position: relative;
   }
+
 body {
     min-height: 100vh;
     display: grid;
@@ -9,5 +25,52 @@ body {
     background: var(--clr-bg);
     font-family: "Balsamiq Sans", cursive;
     color: var(--clr-neon);
-    padding-right: 10rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
   }
+
+p {
+  font-family: "Balsamiq Sans", cursive;
+    color: var(--clr-neon);
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  background: var(--clr-div);
+  border: var(--clr-neon) 0.125em solid;
+  border-radius: 0.25em;
+  float: left;
+  width: 25%; 
+  padding: 1.25rem;
+  height: 20rem;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+}
+
+article {
+  background: var(--clr-div);
+  border: var(--clr-neon) 0.125em solid;
+  border-radius: 0.25em;
+  float: right;
+  padding: 1.25rem;
+  padding-left: 0.72rem;
+  width: 70%;
+  height: 20rem;
+  text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+  box-shadow: inset 0 0 0.5em 0 var(--clr-neon), 0 0 0.5em 0 var(--clr-neon);
+  position: relative;
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  text-align: center;
+}
