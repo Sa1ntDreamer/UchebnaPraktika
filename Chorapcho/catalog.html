@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Каталог</title>
+        <style>
+            body {
+                background-color: #1abc9c;
+            }
+            h1 {
+                padding: 60px;
+                text-align: center;
+                color: white;
+                font-size: 50px;
+            }
+            .table {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            img {
+                height: 240px;
+                width: 332px;
+                margin-bottom: 48px;
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .topnav {
+                background-color: #055545;
+                overflow: hidden;
+            }
+            .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 20px;
+            }
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+            }
+            .copyright {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html">Главна</a>
+            <a class="active" href="catalog.html">Каталог</a>
+            <a href="contacts.html">Контакти</a>
+            <li style="float:right"><a>Чорапко ООД</a></li>
+        </div>
+        <h1>Продукти</h2>
+        <table class="table">
+            <tr>
+                <td><img src="Assets/doglezen.jpg" onclick="window.open('Assets/doglezen.jpg', '_blank');"></td>
+                <td><img src="Assets/nadglezen.png" onclick="window.open('Assets/nadglezen.png', '_blank');"></td>
+                <td><img src="Assets/dulgi.png" onclick="window.open('Assets/dulgi.png', '_blank');"></td>
+            </tr>
+            <tr>
+                <td><img src="Assets/dokolene.png" onclick="window.open('Assets/dokolene.png', '_blank');"></td>
+                <td><img src="Assets/nadkolene.png" onclick="window.open('Assets/nadkolene.png', '_blank');"></td>
+                <td><img src="Assets/mnogodulgi.png" onclick="window.open('Assets/mnogodulgi.png', '_blank');"></td>
+            </tr>
+        </table>
+        <hr>
+        <p class="copyright">&copy</p>
+    </body>
+</html>
